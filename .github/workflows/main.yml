@@ -24,4 +24,5 @@ jobs:
                 username: ubuntu
                 key: ${{ secrets.key }}
                 port: 22
-                script: pm2 restart server
+                script: pm2 restart app
+                
