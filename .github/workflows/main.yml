@@ -24,5 +24,8 @@ jobs:
                 username: ubuntu
                 key: ${{ secrets.key }}
                 port: 22
-                script: pm2 restart app
+                script: |
+                    cd /home/ubuntu/appdemo1
+                    npm install
+                    pm2 restart app
                 
